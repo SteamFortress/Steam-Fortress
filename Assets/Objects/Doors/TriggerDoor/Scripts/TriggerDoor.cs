@@ -10,12 +10,12 @@ public class TriggerDoor : Action
         if (gameObject.GetComponent<Animator>().GetBool("isOpen"))
         {
             gameObject.GetComponent<Animator>().SetBool("isOpen", false);
-            gameObject.transform.Find("door").GetComponent<Animator>().SetBool("open?", false);
+            gameObject.transform.Find("door").GetComponent<Animator>().SetBool("isOpen", false);
         }
         else
         {
             gameObject.GetComponent<Animator>().SetBool("isOpen", true);
-            gameObject.transform.Find("door").GetComponent<Animator>().SetBool("open?", true);
+            gameObject.transform.Find("door").GetComponent<Animator>().SetBool("isOpen", true);
         }
     }
 }
